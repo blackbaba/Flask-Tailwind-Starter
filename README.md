@@ -1,9 +1,10 @@
 # Flask + TailwindCSS Starter Template with PostCSS+PurgeCSS
 ---
-
 ## Key Features
 - Basic Flask app scaffolding (package structure)
 - TailwindCSS (with purge implemented for Production)
+
+## Coming soon !
 - Test/Development/Production config profiles
 - Stripe payment integration
 - SendGrid email integration
