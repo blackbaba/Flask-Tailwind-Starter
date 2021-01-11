@@ -6,6 +6,7 @@ from flask import Flask
 # load_dotenv('.env')
 
 app = Flask(__name__)
+app.secret_key = os.environ.get('SECRET_KEY')
 
 # Import configuration profile based on FLASK_ENV variable - defaults to Production
 if os.environ.get('FLASK_ENV') == 'development':

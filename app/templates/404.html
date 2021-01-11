@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mx-auto p-24">
+    <h1>Page Not Found</h1>
+    <p>What you were looking for is just not there.</p>
+    <a class="underline font-semibold" href="{{ url_for('index') }}">Go back to home page</a>
+</div>
+{% endblock content %}
+
+{% block scripts %}
+{{ super() }}
+
+
+{% endblock scripts %}
