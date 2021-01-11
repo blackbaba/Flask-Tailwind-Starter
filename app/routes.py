@@ -11,4 +11,4 @@ def index():
 
 @app.route('/environment')
 def environment():
-    return f"NODE ENV: {os.environ.get('NODE_ENV')} and FLASK ENV: {os.environ.get('FLASK_ENV')}"
+    return f"NODE ENV: {os.environ.get('NODE_ENV')} and FLASK ENV: {os.environ.get('FLASK_ENV')} and Configuration profile for: {app.config.get('TEST_CONFIG')}"
