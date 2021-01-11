@@ -2,7 +2,12 @@
 
 {% block content %}
 <div class="bg-rose-500 text-white px-6 py-2 shadow">
-    Hello World from Flask Tailwind Starter Template
+    {% if name %}
+    Hello {{ name }} from Flask Tailwind Starter Template
+    {% else %}
+    Hello anonymous from Flask Tailwind Starter Template 
+    {% endif %}
+    
 </div>
 {% endblock content %}
 
