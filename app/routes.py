@@ -58,7 +58,7 @@ def user_posts(username, post_id):
 
 @app.route('/system')
 def system():
-    return f"NODE ENV: {os.environ.get('NODE_ENV')},  FLASK ENV: {os.environ.get('FLASK_ENV')} and Configuration profile for: {app.config.get('TEST_CONFIG')}"
+    return f"NODE ENV: {os.environ.get('NODE_ENV')},  FLASK ENV: {os.environ.get('FLASK_ENV')}"
 
 # Accessing query params
 @app.route('/_add_numbers')
