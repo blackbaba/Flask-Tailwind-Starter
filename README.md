@@ -7,9 +7,9 @@
 ## How to use
 Clone the repository onto your local computer and run:
 
-1.`pip install -r requirements.txt` to install flask packages (assuming you have already a virtual python environment setup)
-2.`npm install` to install npm packages from `package.json`
-3.`npm run develop:css` to build Tailwind for development (no purge) and when ready for production run  `npm run build:css` to prepare a purged CSS build for production
+1. `pip install -r requirements.txt` to install flask packages (assuming you have already a virtual python environment setup)
+2. `npm install` to install npm packages from `package.json`
+3. `npm run develop:css` to build Tailwind for development (no purge) and when ready for production run  `npm run build:css` to prepare a purged CSS build for production
 
 Start Flask application by running `python run.py`.
 
