@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "postcss app/static/src/css/tailwind.css -o app/static/dist/css/main.css",
+    "build:css": "NODE_ENV=production postcss app/static/src/css/tailwind.css -o app/static/dist/css/main.css",
+    "develop:css": "NODE_ENV=development postcss app/static/src/css/tailwind.css -o app/static/dist/css/main.css",
     "watch": " watch 'npm run build:css' ./app/templates"
   },
   "keywords": [],

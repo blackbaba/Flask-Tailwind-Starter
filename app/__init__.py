@@ -1,10 +1,6 @@
 import os
 from flask import Flask
 
-# For loading ENV variables in PROD Gunicorn only
-# from dotenv import load_dotenv
-# load_dotenv('.env')
-
 app = Flask(__name__)
 
 # Import configuration profile based on FLASK_ENV variable - defaults to Production
@@ -15,5 +11,5 @@ elif os.environ.get('FLASK_ENV') == 'testing':
 else:
     app.config.from_object('config.ProductionConfig')
 
-
+# Import routes here
 from app.routes import *
