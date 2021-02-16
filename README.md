@@ -1,5 +1,5 @@
 # Flask + TailwindCSS Starter Template
----
+
 ## Key Features
 - Basic Flask app scaffolding
 - TailwindCSS setup using npm (with purge implemented for Production)
