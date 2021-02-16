@@ -5,9 +5,11 @@
 - TailwindCSS setup using npm (with purge implemented for Production)
 
 ## How to use
+Setup and activate a virtual python environment before proceeding.
+
 Clone the repository onto your local computer and run:
 
-1. `pip install -r requirements.txt` to install flask packages (assuming you have already a virtual python environment setup)
+1. `pip install -r requirements.txt` to install flask packages (assuming you have already  setup)
 2. `npm install` to install npm packages from `package.json`
 3. `npm run develop:css` to build Tailwind for development (no purge) and when ready for production run  `npm run build:css` to prepare a purged CSS build for production
 
