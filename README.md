@@ -1,4 +1,4 @@
-# Flask + TailwindCSS Starter Template with PostCSS+PurgeCSS
+# Flask + TailwindCSS Starter Template
 ---
 ## Key Features
 - Basic Flask app scaffolding
