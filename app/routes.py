@@ -22,12 +22,12 @@ def index():
 
 # User registration route
 @app.route('/register')
-def index():
+def register():
     return render_template('index.html')
 
 # User login route
 @app.route('/login')
-def index():
+def login():
     return render_template('index.html')
 
 # 404 Error handler
