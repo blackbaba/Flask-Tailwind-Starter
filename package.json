@@ -1,25 +1,29 @@
 {
-  "name": "Flask-Tailwind-Starter",
+  "name": "flask-tailwind-starter",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "test": "tests"
-  },
+  "description": "## Key Features - Basic Flask app scaffolding - TailwindCSS setup using npm (with purge implemented for Production)",
+  "main": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "NODE_ENV=production postcss app/static/src/css/tailwind.css -o app/static/dist/css/main.css",
-    "develop:css": "NODE_ENV=development postcss app/static/src/css/tailwind.css -o app/static/dist/css/main.css",
-    "watch": " watch 'npm run build:css' ./app/templates"
+    "dev": "TAILWIND_MODE=watch NODE_ENV=development postcss ./app/static/src/css/tailwind.css -o ./app/static/dist/css/main.css -w",
+    "build:dev": "TAILWIND_MODE=build NODE_ENV=development postcss ./app/static/src/css/tailwind.css -o ./app/static/dist/css/main.css",
+    "build:prod": "TAILWIND_MODE=build NODE_ENV=production postcss ./app/static/src/css/tailwind.css -o ./app/static/dist/css/main.css"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackbaba/Flask-Tailwind-Starter.git"
+  },
+  "author": "Amrinder Dhindsa",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blackbaba/Flask-Tailwind-Starter/issues"
+  },
+  "homepage": "https://github.com/blackbaba/Flask-Tailwind-Starter#readme",
+  "devDependencies": {
+    "@tailwindcss/jit": "^0.1.18",
+    "postcss": "^8.3.0",
+    "tailwindcss": "^2.1.4"
+  },
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^3.1.0",
-    "autoprefixer": "^10.1.0",
-    "postcss-cli": "^8.3.1",
-    "tailwindcss": "^2.0.2",
-    "watch": "^1.0.2"
+    "autoprefixer": "^10.2.6"
   }
 }
